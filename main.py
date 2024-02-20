@@ -15,10 +15,10 @@ def flush():
         os.system("clear")
 
 if __name__ == "__main__":
-    grid = Grid(10,10)
+    grid = Grid(20,20)
     for _ in range(10):
         flush()
         print(grid)
         grid.step()
-        time.sleep(0.5)
+        time.sleep(1)
         
