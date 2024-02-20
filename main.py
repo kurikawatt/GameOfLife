@@ -16,6 +16,8 @@ def flush():
 
 if __name__ == "__main__":
     grid = Grid(10,10)
-    print(grid)
-    time.sleep(1)
-    flush()
+    for _ in range(10):
+        flush()
+        print(grid)
+        time.sleep(0.5)
+        

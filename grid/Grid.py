@@ -34,7 +34,9 @@ class Grid:
                                 neighboors_count += 1
                 # First and third rules
                 if neighboors_count < 2 or neighboors_count > 3: 
+                    print("hey!")
                     self.__content[x][y] = 0
                 # Second and fourth rules
                 else:
+                    print("nop")
                     self.__content[x][y] = 1
