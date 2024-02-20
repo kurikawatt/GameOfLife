@@ -19,3 +19,22 @@ class Grid:
                 res +=  f"{column} "
             res += "\n"
         return res
+    
+    def is_in_grid(self, x, y):
+        return (0 <= x and x < self.__width) and (0 <= y and y < self.__length)
+
+    def step(self):        
+        for x in range(self.__width):
+            for y in range(self.__length):
+                neighboors_count:int = 0
+                for dx in range(-1,2):
+                    for dy in range(-1,2):
+                        if self.is_in_grid(x+dx, y+dy):
+                            if self.__content[x+dx][y+dy]:
+                                neighboors_count += 1
+                # First and third rules
+                if neighboors_count < 2 or neighboors_count > 3: 
+                    self.__content[x][y] = 0
+                # Second and fourth rules
+                else:
+                    self.__content[x][y] = 1
