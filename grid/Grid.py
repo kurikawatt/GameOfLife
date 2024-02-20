@@ -10,3 +10,4 @@ class Grid:
             for column in line:
                 res +=  f"{column} "
             res += "\n"
+        return res
