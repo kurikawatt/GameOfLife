@@ -19,5 +19,6 @@ if __name__ == "__main__":
     for _ in range(10):
         flush()
         print(grid)
+        grid.step()
         time.sleep(0.5)
         
