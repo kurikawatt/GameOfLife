@@ -16,7 +16,7 @@ def flush():
 
 if __name__ == "__main__":
     grid = Grid(20,20)
-    for _ in range(10):
+    while True:
         flush()
         print(grid)
         grid.step()
