@@ -8,5 +8,5 @@ class Grid:
         res:str = ""
         for line in self.__content:
             for column in line:
-                res += column + " "
+                res +=  f"{column} "
             res += "\n"
