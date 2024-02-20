@@ -1,2 +1,8 @@
+#!/bin/python
+# coding: utf-8
+
+from grid.Grid import Grid
+
 if __name__ == "__main__":
-    print("In dev...")
+    grid = Grid(10,10)
+    print(grid)
